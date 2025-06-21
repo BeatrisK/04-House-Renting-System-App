@@ -19,6 +19,7 @@ pipeline {
                 bat 'dotnet test'
             }
         }
+    }
     post {
         always {
             echo 'Pipeline completed'
@@ -30,5 +31,4 @@ pipeline {
             echo 'Pipeline failed!'
         }
     }
-}
 }
